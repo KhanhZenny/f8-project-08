@@ -2,8 +2,8 @@
 
 html {
     --text-color: #1a162e;
-    --icon-color: brightness(0) saturate(100%) invert(5%) sepia(18%)
-        saturate(6514%) hue-rotate(233deg) brightness(101%) contrast(91%);
+    --icon-color: brightness(0) saturate(100%) invert(5%) sepia(18%) saturate(6514%) hue-rotate(233deg) brightness(101%)
+        contrast(91%);
 
     --body-bg: #f6f6f6;
     --header-bg-color: #eee;
@@ -11,8 +11,8 @@ html {
     --top-action-group-shadow: rgba(237, 237, 246, 0.2);
     --top-action-separate: #ededf6;
 
-    @include abstracts.breakpoint(lg) {
-        --header-shadow-color: rgba(0, 0, 0, 0.20);
+    @include abstracts.screen(lg) {
+        --header-shadow-color: rgba(0, 0, 0, 0.2);
     }
 
     // Dropdown
@@ -20,7 +20,39 @@ html {
     --dropdown-showdown-color: rgba(200, 200, 200, 0.4);
     --top-menu-border-color: #d2d1d6;
 
-    // sidebar 
+    // sidebar
     --sidebar-bg: #fff;
-    --sidebar-shadow: rgba(200, 200, 200, 0.40);
+    --sidebar-shadow: rgba(200, 200, 200, 0.4);
+
+    // category-item
+    --category-item-bg: c;
+    --category-item-thumb-bg: #fff;
+    --category-item-title: #000;
+
+    @include abstracts.screen(md) {
+        --category-item-bg: #fff;
+    }
+
+    --filter-btn-color: #6C6C72;
+    --filter-btn-bg: #fff;
+    --filter-form-bg: #fff;
+    --filter-form-shadow: rgba(200, 200, 200, 0.4);
+
+    --filter-form-tag-bg: #F8F8FB;
+    --filter-form-arrow: var(--dropdown-arrow-color);
+    --filter-form-footer-bg: var(--dropdown-bg-color);
+    
+    // products card
+    --product-card-bg: #fff;
+    --product-card-shadow: rgba(237, 237, 246, 0.2);
+
+    --like-btn-shadow:rgba(124, 124, 124, 0.20);
+
+
+    // footer
+    --footer-bg-color: var(--header-bg-color);
+    --footer-text-color: #9e9da6;
+
+    // auth
+    --auth-content-bg: #fff;
 }
