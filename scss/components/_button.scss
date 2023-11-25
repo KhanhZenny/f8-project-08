@@ -53,12 +53,18 @@
     border-radius: 6px;
     
     background: #f8f8f8;
+    white-space: nowrap;
+    user-select: none;
     
     font-size: 1.8rem;
     font-weight: 500;
     line-height: 144.444%;
 
     user-select: none;
+
+    &--small {
+        height: 40px;
+    }
 
     + .btn {
         &:not(.btn--no-margin) {
@@ -68,7 +74,6 @@
 
     &--text {
         background: transparent;
-        color: #9E9DA8;
         font-weight: 400;
     }
 
@@ -83,6 +88,11 @@
 
     &--rounded {
         border-radius: 99px;
+    }
+
+    &--danger {
+        color: #fff;
+        background-color: #ed4337;
     }
 
     &[disabled],

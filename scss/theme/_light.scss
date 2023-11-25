@@ -15,10 +15,15 @@ html {
         --header-shadow-color: rgba(0, 0, 0, 0.2);
     }
 
+    // header
+    --header-act-dropdown-bg: #FFF;
+    --header-acr-shadow-color: rgba(200, 200, 200, 0.40);
+
     // Dropdown
     --dropdown-bg-color: #fff;
     --dropdown-showdown-color: rgba(200, 200, 200, 0.4);
     --top-menu-border-color: #d2d1d6;
+    --act-dropdown-bottom-border-color: #d2d1d6;
 
     // sidebar
     --sidebar-bg: #fff;
@@ -33,21 +38,22 @@ html {
         --category-item-bg: #fff;
     }
 
-    --filter-btn-color: #6C6C72;
+    // act dropdown
+
+    --filter-btn-color: #6c6c72;
     --filter-btn-bg: #fff;
     --filter-form-bg: #fff;
     --filter-form-shadow: rgba(200, 200, 200, 0.4);
 
-    --filter-form-tag-bg: #F8F8FB;
+    --form-tag-bg: #f8f8fb;
     --filter-form-arrow: var(--dropdown-arrow-color);
     --filter-form-footer-bg: var(--dropdown-bg-color);
-    
+
     // products card
     --product-card-bg: #fff;
     --product-card-shadow: rgba(237, 237, 246, 0.2);
 
-    --like-btn-shadow:rgba(124, 124, 124, 0.20);
-
+    --like-btn-shadow: rgba(124, 124, 124, 0.2);
 
     // footer
     --footer-bg-color: var(--header-bg-color);
@@ -55,4 +61,67 @@ html {
 
     // auth
     --auth-content-bg: #fff;
+    --auth-intro-bg: #fafafd;
+    --auth-border-btn-color: #d2d1d6;
+
+    @include abstracts.screen(md) {
+        --auth-intro-bg: #fff;
+    }
+
+    // form
+    --form-placeholder-color: #d2d1d6;
+    --form-label-color: #9e9da8;
+    --form-select-dialog-shadow: rgba($color: #000000, $alpha: 0.15);
+    --form-select-dialog-bg: #fff;
+    --form-option-hover: #ebebeb;
+
+
+    // product
+    --product-detail-bg: #fff;
+    --product-detail-info-bg: #f6f6f6;
+    --product-info-container-bg: #fff;
+    --product-deatail-tag-bg: #EDEDF6;
+
+    @include abstracts.screen(md) {
+        --product-detail-bg: #FAFAFD;
+        --product-detail-info-bg: #fff;
+    }
+
+
+
+    // breadcrumbs
+    --breadcrumb-shadow-bg: rgba(237, 237, 246, 0.2);
+    --breadcrumbs-bg: #f6f6f6;
+
+    @include abstracts.screen(md)  {
+        --breadcrumbs-bg: #fff;
+    }
+
+    // search bar
+    --search-bar-bg: #fff;
+
+    // review card 
+    --review-card-bg: #FAFAFD;
+
+    @include abstracts.screen(md)  {
+        --review-card-bg: #fff;
+    }
+
+    // text-content
+    --text-content-bg-hr:#ebebeb;
+
+    // card preview
+    --card-peview-border-color: #ebebeb;
+
+    // checkout
+    --checkout-breadcrumb-bg: #fff;
+    --checkout-card-info-bg: #fff;
+    --card-info-shadow: rgba(237, 237, 246, 0.20);
+    --checkout-border-color: #d2d1d6;
+    --checkout-gift-shadow: rgba(237, 237, 246, 0.2);
+
+    // dialog
+    --modal-content-bg: #fff;
+    --modal-content-shadow-color: rgba(237, 237, 246, 0.2);
+
 }

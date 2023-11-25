@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -38,6 +42,7 @@ a,
 button,
 img,
 select,
+label,
 textarea,
 input {
     padding: 0;
@@ -45,10 +50,19 @@ input {
     color: inherit;
     outline: none;
     border: none;
-    -webkit-tap-highlight-color: transparent;
 }
 
-input {
+input:-webkit-autofill,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active,
+input:-webkit-autofill:hover {
+    transition: background-color 1s 9999s;
+    -webkit-text-fill-color: var(--text-color);
+    caret-color: var(--text-color);
+}
+
+
+input, textarea {
     background: transparent;
 }
 
@@ -57,4 +71,18 @@ input {
         padding-left: 20px !important;
         padding-right: 20px !important;
     }
+}
+
+i,
+em {
+    font-style: italic;
+}
+
+b,
+strong {
+    font-weight: 600;
+}
+
+u {
+    text-decoration: underline;
 }
