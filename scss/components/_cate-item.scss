@@ -3,7 +3,7 @@
 .cate-item {
     display: flex;
     height: 100%;
-    padding: 2rem 2.6rem 2rem 2rem;
+    padding: 20px;
     border-radius: 1.6rem;
     background: var(--category-item-bg);
     gap: 20px;
@@ -18,8 +18,8 @@
 
     &__thumb {
         display: block;
-        width: 116px;
-        height: 116px;
+        width: 100px;
+        height: 100px;
         object-fit: contain;
         background: var(--category-item-thumb-bg);
         border-radius: 8px;

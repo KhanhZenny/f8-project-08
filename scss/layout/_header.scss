@@ -18,7 +18,7 @@
 .top-bar {
     @extend %flexItemCenter;
     position: relative;
-    padding: 30px 0;
+    padding: 16px 0;
     z-index: 1;
 
     @include abstracts.screen(sm) {
@@ -273,7 +273,6 @@
     &__dropdown {
         right: -15px !important;
         width: min(300px, 100vw) !important;
-        display: block !important;
     }
 
     &__dropdown-arrow {
@@ -436,13 +435,12 @@
 }
 
 .user-menu {
-
-
     &__avatar {
         width: 60px;
         height: 60px;
         border-radius: 10%;
         object-fit: cover;
+        cursor: pointer;
     }
 
     &__top {
@@ -463,11 +461,16 @@
     }
 
     &__link {
+        align-items: center;
         padding: 14px 0;
         display: flex;
+        justify-content: space-between;
+        gap: 15px;
     }
 
     &__separate {
+        margin-top: 10px;
+        padding-top: 10px;
         border-top: 1px solid var(--separate-bg);
     }
 }
