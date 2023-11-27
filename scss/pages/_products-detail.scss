@@ -79,7 +79,7 @@
         width: 62px;
         height: 62px;
         object-fit: contain;
-        border: 1.5px solid rgb(158, 157, 168, 0.3);
+        border: 1px solid rgb(158, 157, 168, 0.3);
         border-radius: 8px;
         opacity: 0.9;
         transition: opacity, border-color;
@@ -131,7 +131,7 @@
         margin-top: 30px;
     }
 
-    &__card {
+    &__cart {
         margin-top: 30px;
         padding: 20px;
         border-radius: 6px;
@@ -288,7 +288,6 @@
 }
 
 .prod-content {
-    
     &__heading {
         margin-bottom: 30px;
         font-size: 2.2rem;

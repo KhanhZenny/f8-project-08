@@ -86,3 +86,13 @@ strong {
 u {
     text-decoration: underline;
 }
+
+.separate {
+    margin: var(--margin) 0;
+    height: 1px;
+    background: var(--separate-bg);
+
+    @include abstracts.screen(sm) {
+        --margin: 16px !important; 
+    }
+}

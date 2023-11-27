@@ -43,7 +43,7 @@ $error--color: #ed4337;
         align-items: center;
         padding: 0 12px;
         border-radius: 10px;
-        border: 1.5px solid #d2d1d6;
+        border: 1px solid #d2d1d6;
         &:focus-within {
             border-color: #77dae6;
         }
@@ -144,16 +144,17 @@ $error--color: #ed4337;
     &__close-dialog {
         position: absolute;
         font-size: 3rem;
-        padding: 2px 19px;
+        padding: 12px 18px;
         top: 0;
         right: 0;
+        opacity: 0.8;
     }
 
     &__dialog-heading {
         font-size: 1.8rem;
         font-weight: 600;
         text-align: center;
-        padding: 14px;
+        padding: 20px;
     }
 
     &__search {
@@ -166,11 +167,11 @@ $error--color: #ed4337;
         height: 38px;
 
         @include abstracts.screen(lg) {
-            height: 42px;
+            height: 48px;
         }
 
         @include abstracts.screen(sm) {
-            margin: 10px 20px 0;
+            margin: 10px 30px 0;
             border: 1px solid #d2d1d6;
             border-radius: 10px;
             padding: 0 16px;
@@ -183,9 +184,14 @@ $error--color: #ed4337;
         }
 
         &-icon {
-            width: 18px;
-            height: 18px;
+            width: 16px;
+            height: 16px;
             margin-left: 10px;
+
+            @include abstracts.screen(lg) {
+                width: 20px;
+                height: 20px;
+            }
         }
     }
 
@@ -194,6 +200,10 @@ $error--color: #ed4337;
         overflow-y: auto;
         margin-top: 10px;
         overscroll-behavior: contain;
+
+        @supports (-webkit-touch-callout: none) {
+            padding-bottom: 300px;
+        }
     }
 
     &__option {
@@ -211,7 +221,8 @@ $error--color: #ed4337;
         }
 
         @include abstracts.screen(lg) {
-            padding: 14px 20px;
+            font-size: 1.6rem;
+            padding: 18px 30px;
         }
     }
 
@@ -264,7 +275,7 @@ $error--color: #ed4337;
             width: 19px;
             height: 19px;
             border-radius: 5px;
-            border: 1.5px solid #9e9da8;
+            border: 1px solid #9e9da8;
         }
 
         &::after {
@@ -295,6 +306,13 @@ $error--color: #ed4337;
         font-size: 22px;
         font-weight: 500;
         line-height: 145.455%;
+
+        &--medium {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            font-weight: 500;
+            line-height: 144.444%;
+        }
 
         &--small {
             font-size: 14px;

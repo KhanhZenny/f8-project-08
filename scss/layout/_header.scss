@@ -6,6 +6,8 @@
 }
 
 .header {
+    position: relative;
+    z-index: 2;
     background: var(--header-bg-color);
 
     @include abstracts.screen(lg) {
@@ -229,7 +231,7 @@
         position: relative;
 
         &:hover .act-dropdown {
-            display: block
+            display: block;
         }
     }
 
@@ -258,6 +260,24 @@
         border-radius: 8px;
         display: block;
         cursor: pointer;
+    }
+
+    &__user {
+        position: relative;
+
+        &:hover .act-dropdown {
+            display: block;
+        }
+    }
+
+    &__dropdown {
+        right: -15px !important;
+        width: min(300px, 100vw) !important;
+        display: block !important;
+    }
+
+    &__dropdown-arrow {
+        right: 15px !important;
     }
 }
 
@@ -381,13 +401,13 @@
     }
 }
 
-.card-preview-item {
+.cart-preview-item {
     text-align: left;
 
     &__img-wrap {
         padding-top: 100%;
         position: relative;
-        border: 1.5px solid var(--card-peview-border-color);
+        border: 1px solid var(--cart-peview-border-color);
         border-radius: 10px;
     }
 
@@ -412,5 +432,42 @@
         font-size: 1.5rem;
         font-weight: 500;
         line-height: 146.667%;
+    }
+}
+
+.user-menu {
+
+
+    &__avatar {
+        width: 60px;
+        height: 60px;
+        border-radius: 10%;
+        object-fit: cover;
+    }
+
+    &__top {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    &__name {
+        margin-bottom: 8px;
+        nav-down: 600;
+        font-size: 1.8rem;
+        line-height: 1.45;
+    }
+
+    &__list {
+        margin-top: 30px;
+    }
+
+    &__link {
+        padding: 14px 0;
+        display: flex;
+    }
+
+    &__separate {
+        border-top: 1px solid var(--separate-bg);
     }
 }

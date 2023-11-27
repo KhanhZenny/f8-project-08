@@ -29,7 +29,7 @@ html.dark {
     --menu-column-icon-color: brightness(0) saturate(100%) invert(88%) sepia(0%) saturate(3116%) hue-rotate(204deg)
         brightness(104%) contrast(113%);
 
-    --act-dropdown-bottom-border-color: #171C28;
+    --act-dropdown-bottom-border-color: #171c28;
 
     // sidebar
     --sidebar-bg: #2f3441;
@@ -50,9 +50,9 @@ html.dark {
     --filter-form-arrow: var(--dropdown-arrow-color);
     --filter-form-footer-bg: var(--dropdown-bg-color);
 
-    // products card
-    --product-card-bg: #171c28;
-    --product-card-shadow: rgba(0, 0, 0, 0.2);
+    // products cart
+    --product-cart-bg: #171c28;
+    --product-cart-shadow: rgba(0, 0, 0, 0.2);
 
     --like-btn-shadow: rgba(124, 124, 124, 0.2);
 
@@ -99,24 +99,36 @@ html.dark {
     // search bar
     --search-bar-bg: #171c28;
 
-    // review card
-    --review-card-bg: #171c28;
+    // review cart
+    --review-cart-bg: #171c28;
 
     // text-content
     --text-content-bg-hr: #414349;
 
-     // card preview
-     --card-peview-border-color: #171c28;
+    // cart preview
+    --cart-peview-border-color: #171c28;
 
-     // checkout
+    // checkout
     --checkout-breadcrumb-bg: #171c28;
-    --checkout-card-info-bg: #171c28;
-    --card-info-shadow: rgba(23, 28, 40, 0.20);
+    --checkout-cart-info-bg: #171c28;
+    --cart-info-shadow: rgba(23, 28, 40, 0.2);
     --checkout-border-color: #292e39;
-    --checkout-gift-shadow: rgba(23, 28, 40, 0.20);
+    --checkout-gift-shadow: rgba(23, 28, 40, 0.2);
     --checkout-checkbox-color: var(--icon-color);
+    --checkout-payment-item-bg-color: #292E39;
 
-      // dialog
-      --modal-content-bg: #2f3441;
-      --modal-content-shadow-color: rgba(23, 28, 40, 0.4);
+
+    // dialog
+    --modal-content-bg: #2f3441;
+    --modal-content-shadow-color: rgba(23, 28, 40, 0.4);
+
+    // profile
+    --profile-sidebar-bg: #171C28;
+    --profile-sidebar-shadow-bg: rgba(23, 28, 40, 0.20);
+    --profile-account-info-bg: #292E39;
+    --profile-account-info-icon-bg: #171C28; 
+    --profile-sidebar-link-hover: #2f3441;
+    
+    // separate 
+    --separate-bg: #292E39;
 }

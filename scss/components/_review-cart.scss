@@ -1,14 +1,12 @@
 @use "../abstracts";
 
-.review-card {
+.review-cart {
     display: flex;
     flex-direction: column;
     height: 100%;
     padding: 30px;
     border-radius: 16px;
-    background: var(--review-card-bg);
-
-    
+    background: var(--review-cart-bg);
 
     &__content {
         display: flex;
